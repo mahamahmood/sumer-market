@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const Product = require('../models/products');
 
 
 //==== All Routes ====//
@@ -18,6 +19,13 @@ router.get('/new', (req, res) => {
 // Update
 
 // Create
+router.post('/', (req, res) => {
+    // Use model to create Product Document
+    Product.create(req.body, (error, createProduct) => {
+        // Once created - respond to client
+        res.redirect('/products');
+    });
+});
 
 // Edit
 
