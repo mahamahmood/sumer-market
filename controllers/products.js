@@ -6,7 +6,12 @@ const Product = require('../models/products');
 //==== All Routes ====//
 // Index
 router.get('/', (req, res) => {
-    res.send('Index Page');
+    // res.send('Index Page');
+    Product.find({}, (error, allProducts) => {
+        res.render('products/Index', {
+            products: allProducts
+        });
+    });
 });
 
 // New
