@@ -20,14 +20,15 @@ router.get('/new', (req, res) => {
 });
 
 // Delete/Destroy
-
-// Update
 router.delete('/:id', (req, res) => {
     // Delete a document from the collection
     Product.findByIdAndRemove(req.params.id, (error, prodcut)=>{
         res.redirect('/products');
     });
 });
+
+// Update
+
 
 // Create
 router.post('/', (req, res) => {
