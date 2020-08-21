@@ -40,6 +40,17 @@ router.post('/', (req, res) => {
 });
 
 // Edit
+router.get('/:id/edit', (req, res) => {
+    // res.send('edit page!!')
+    // Find the document in the collection using mongoose model
+    Product.findById(req.params.id, (error, foundProduct) => {
+        // Render the eidt view and pass it the found product
+        res.render('products/Edit', {
+            product: foundProduct
+        });
+    });
+});
+
 
 // Show
 router.get('/:id', (req, res) => {

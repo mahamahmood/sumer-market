@@ -17,10 +17,12 @@ class Index extends React.Component {
                                     <li>Name: {product.name}</li>
                                     <a href={`/products/${product._id}`}><img src={product.img} /></a>
                                     <li>Price: ${product.price}</li>
+
                                     {/* override post method to delete the product of this uniq id */}
                                     <form action={`/products/${product._id}?_method=DELETE`} method='POST'>
                                         <input type='submit' value='Delete Product' />
                                     </form>
+                                    <a href={`/products/${product._id}/edit`}>Edit Product</a>
                                 </div>
                             );
                         })
