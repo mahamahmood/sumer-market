@@ -25,6 +25,8 @@ mongoose.connection.once('open', () => {
 });
 
 // Controllers
+const productsController = require('./controllers/products.js');
+app.use('/products', productsController); // router
 
 // Default Route
 app.get('/', (req, res) => {
