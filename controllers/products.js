@@ -35,7 +35,15 @@ router.post('/', (req, res) => {
 // Edit
 
 // Show
-
+router.get('/:id', (req, res) => {
+    // Find the requested document
+    Product.findById(req.params.id, (error, foundProduct) => {
+        // Send the Show route and pass it foundProduct
+        res.render('products/Show', {
+            product: foundProduct
+        });
+    });
+});
 
 //==== End of All Routes ====//
 
