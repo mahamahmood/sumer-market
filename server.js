@@ -30,7 +30,8 @@ app.use('/products', productsController); // router
 
 // Default Route
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    // res.send('Hello World');
+    res.render('/products');
 });
 
 // PORT Listen
