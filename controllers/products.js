@@ -28,7 +28,12 @@ router.delete('/:id', (req, res) => {
 });
 
 // Update
-
+router.put('/:id', (req, res) => {
+    // Update the product document using the model
+    Product.findByIdAndUpdate(req.params.id, req.body, {new: true}, (error, updatedModel) => {
+        res.redirect('/products');
+    });
+});
 
 // Create
 router.post('/', (req, res) => {
