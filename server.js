@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 
 // Dependencies
 const express = require('express');
@@ -21,17 +21,17 @@ const mongoURI = process.env.MONGO_URI;
 // Mongoose Connection
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.once('open', () => {
-    console.log('Connected to mongo!')
+    console.log('Connected to mongo!');
 });
 
 // Controllers
 
-// Routes
-app.get('/products', (req, res) => {
-    res.send('Hello World')
-})
+// Default Route
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
 
 // PORT Listen
 app.listen(PORT, () => {
-    console.log("I'm listening on port: " + PORT)
+    console.log("I'm listening on port: " + PORT);
 });
