@@ -32,10 +32,28 @@ const recipesController = require('./controllers/recipes.js');
 app.use('/recipes', recipesController);// router for recipes
 
 // Default Route
+// app.get('/', (req, res) => {
+//     // res.send('Hello World');
+//     res.redirect('/products');
+// });
+
+//==== Static Pages ====//
+// Home Page
 app.get('/', (req, res) => {
-    // res.send('Hello World');
-    res.redirect('/products');
+    res.render('static/Home');
 });
+
+// About Page
+app.get('/about', (req, res) => {
+    res.render('static/About');
+});
+
+// Contact Us Page
+app.get('/contact-us', (req, res) => {
+    res.render('static/ContactUs');
+});
+//==== End of Static Pages ====//
+
 
 // PORT Listen
 app.listen(PORT, () => {
