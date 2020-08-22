@@ -40,7 +40,13 @@ router.post('/', (req, res) => {
 // Edit
 
 // Show
-
+router.get('/:id', (req, res) => {
+    Recipe.findById(req.params.id, (error, foundRecipe) => {
+        res.render('recipes/Show', {
+            recipe: foundRecipe
+        });
+    });
+});
 
 //==== End of All Routes ====//
 

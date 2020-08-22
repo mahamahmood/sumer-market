@@ -13,7 +13,7 @@ class Index extends React.Component {
                             return (
                                 <div>
                                     <li>Title: {recipe.title}</li>
-                                    <img src={recipe.img} />
+                                    <a href={`/recipes/${recipe._id}`}><img src={recipe.img} /></a>
                                     <form action={`/recipes/${recipe._id}?_method=DELETE`} method='POST'>
                                         <input type='submit' value='Delete Recipe' />
                                     </form>
