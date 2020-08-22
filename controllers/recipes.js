@@ -29,6 +29,11 @@ router.delete('/:id', (req, res) => {
 });
 
 // Update
+router.put('/:id', (req, res) => {
+    Recipe.findByIdAndUpdate(req.params.id, req.body,  {new: true}, (error, updateModel) => {
+        res.redirect('/recipes');
+    });
+});
 
 // Create
 router.post('/', (req, res) => {
@@ -45,7 +50,6 @@ router.get('/:id/edit', (req, res) => {
         });
     });
 });
-
 
 // Show
 router.get('/:id', (req, res) => {
