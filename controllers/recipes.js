@@ -16,6 +16,10 @@ router.get('/', (req, res) => {
 });
 
 // New
+router.get('/new', (req, res) => {
+    // res.send('new page');
+    res.render('recipes/New');
+});
 
 // Delete
 
