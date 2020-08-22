@@ -26,7 +26,10 @@ mongoose.connection.once('open', () => {
 
 // Controllers
 const productsController = require('./controllers/products.js');
-app.use('/products', productsController); // router
+app.use('/products', productsController); // router for products
+
+const recipesController = require('./controllers/recipes.js');
+app.use('/recipes', recipesController);// router for recipes
 
 // Default Route
 app.get('/', (req, res) => {

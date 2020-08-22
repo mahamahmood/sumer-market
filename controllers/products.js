@@ -56,7 +56,6 @@ router.get('/:id/edit', (req, res) => {
     });
 });
 
-
 // Show
 router.get('/:id', (req, res) => {
     // Find the requested document
