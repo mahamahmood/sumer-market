@@ -26,6 +26,11 @@ router.get('/new', (req, res) => {
 // Update
 
 // Create
+router.post('/', (req, res) => {
+    Recipe.create(req.body, (error, createdRecipe) => {
+        res.redirect('/recipes');
+    });
+});
 
 // Edit
 

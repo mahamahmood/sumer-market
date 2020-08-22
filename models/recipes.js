@@ -5,8 +5,8 @@ const Schema = mongoose.Schema;
 const recipeSchema = new Schema({
     title: {type: String, required: true},
     img: {type: String, required: true},
-    ingredients: {type: Array, required: true},
-    tools: {type: Array, required: true},
+    ingredients: {type: String, required: true},
+    tools: {type: String, required: true},
     method: {type: String, required: true}
 });
 
@@ -15,3 +15,5 @@ const Recipe = mongoose.model('Recipe', recipeSchema);
 
 // Export Recipe Model
 module.exports = Recipe;
+
+//look into makeing the ingredients and tools to be arrays.
