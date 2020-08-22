@@ -14,6 +14,9 @@ class Index extends React.Component {
                                 <div>
                                     <li>Title: {recipe.title}</li>
                                     <img src={recipe.img} />
+                                    <form action={`/recipes/${recipe._id}?_method=DELETE`} method='POST'>
+                                        <input type='submit' value='Delete Recipe' />
+                                    </form>
                                 </div>
                             );
                         })

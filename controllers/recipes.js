@@ -22,6 +22,11 @@ router.get('/new', (req, res) => {
 });
 
 // Delete
+router.delete('/:id', (req, res) => {
+    Recipe.findByIdAndDelete(req.params.id, (error, recipe) => {
+        res.redirect('/recipes');
+    });
+});
 
 // Update
 
