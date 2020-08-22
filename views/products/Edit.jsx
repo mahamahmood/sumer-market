@@ -10,6 +10,7 @@ class Edit extends React.Component {
                 <form action={`/products/${_id}?_method=PUT`} method='POST'>
                     Name: <input type='text' name='name' defaultValue={name}/><br/>
                     Image URL: <input type='text' name='img' defaultValue={img}/><br/>
+                    Description: <input type='text' name='description' defaultValue={description}/><br/>
                     Quantity: <input type='number' name='qty' defaultValue={qty}/><br/>
                     Price: <input type='number' name='price' defaultValue={price}/><br/>
                     <input type='submit' name='' value='Submit Changes'/>

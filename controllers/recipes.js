@@ -38,6 +38,14 @@ router.post('/', (req, res) => {
 });
 
 // Edit
+router.get('/:id/edit', (req, res) => {
+    Recipe.findById(req.params.id, (error, foundRecipe) => {
+        res.render('recipes/Edit', {
+            recipe: foundRecipe
+        });
+    });
+});
+
 
 // Show
 router.get('/:id', (req, res) => {
