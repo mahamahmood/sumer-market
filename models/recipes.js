@@ -7,7 +7,9 @@ const recipeSchema = new Schema({
     img: {type: String, required: true},
     ingredients: {type: String, required: true},
     tools: {type: String, required: true},
-    method: {type: String, required: true}
+    method: {type: String, required: true},
+    author: {type: String, required: true},
+    date: {type: String, required: true}
 },{ timestamps: true });
 
 // Create Model from Recipe Schema

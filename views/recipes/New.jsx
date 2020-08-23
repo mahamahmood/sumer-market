@@ -13,6 +13,8 @@ class New extends React.Component {
                         Ingredients: <input type='text' name='ingredients' /><br />
                         Tools Needed: <input type='text' name='tools' /><br />
                         Method: <input type='text' name='method' /><br />
+                        Shared By: <input type='text' name='author'/><br />
+                        Date Shared: <input type='text' name='date'/><br />
                         <input type='submit' name='' value='Create My Recipe' />
                     </form>
                 </div>

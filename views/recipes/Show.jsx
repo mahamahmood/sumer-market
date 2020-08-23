@@ -3,7 +3,7 @@ const Default = require('../components/Default');
 
 class Show extends React.Component {
     render() {
-        const { title, img, ingredients, tools, method } = this.props.recipe;
+        const { title, img, ingredients, tools, method, author, date } = this.props.recipe;
         return (
             <Default>
                 <div>
@@ -14,6 +14,8 @@ class Show extends React.Component {
                     <p>Ingredients: {ingredients}</p>
                     <p>Tools Needed: {tools}</p>
                     <p>Method: {method}</p>
+                    <p>Shared By: {author}</p>
+                    <p>Date Shared: {date}</p>
                 </div>
             </Default>
         );
