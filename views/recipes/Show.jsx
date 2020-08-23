@@ -6,6 +6,7 @@ class Show extends React.Component {
         return(
             <div>
                 <h1>Recipe Show Page</h1>
+                <a href='/recipes'>Back to Recipes</a>
                 <p>Title: {title}</p>
                 <img src={img} />
                 <p>Ingredients: {ingredients}</p>

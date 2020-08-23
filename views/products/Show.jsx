@@ -7,6 +7,7 @@ class Show extends React.Component {
         return (
             <div>
                 <h1>Product Show Page</h1>
+                <a href='/products'>Back to Products</a>
                 <p>Name: {name}</p>
                 <img src={img} />
                 <p>Description: {description}</p>
@@ -17,11 +18,7 @@ class Show extends React.Component {
                 </form>
             </div>
         );
-
     }
 }
 
 module.exports = Show;
-
-// need to come back and work on the buy/order button along with qyt and price
-// buy button is rediercting to index for now

@@ -26,10 +26,12 @@ router.delete('/:id', (req, res) => {
         res.redirect('/products');
     });
 });
+
 // Update - Buy Product
 router.patch('/:id', (req, res) => {
+    // const { _id, qty } = this.props.product;
     Product.findByIdAndUpdate({_id: req.params.id}, {$inc: {qty: -1}}, (error, updatedQtyModel) => {
-        res.redirect(`/products/:id`)
+        res.redirect(`/products/${req.params.id}`);
     });
 });
 
@@ -65,7 +67,7 @@ router.get('/:id/edit', (req, res) => {
 // Show
 router.get('/:id', (req, res) => {
     // Find the requested document
-    Product.findById(req.params.id, (error, foundProduct) => {
+    Product.findById(req.params.id, req.body, (error, foundProduct) => {
         // Send the Show route and pass it foundProduct
         res.render('products/Show', {
             product: foundProduct
