@@ -26,6 +26,12 @@ router.delete('/:id', (req, res) => {
         res.redirect('/products');
     });
 });
+// Update - Buy Product
+router.patch('/:id', (req, res) => {
+    Product.findByIdAndUpdate({_id: req.params.id}, {$inc: {qty: -1}}, (error, updatedQtyModel) => {
+        res.redirect(`/products/:id`)
+    });
+});
 
 // Update
 router.put('/:id', (req, res) => {

@@ -8,7 +8,7 @@ const recipeSchema = new Schema({
     ingredients: {type: String, required: true},
     tools: {type: String, required: true},
     method: {type: String, required: true}
-});
+},{ timestamps: true });
 
 // Create Model from Recipe Schema
 const Recipe = mongoose.model('Recipe', recipeSchema);
