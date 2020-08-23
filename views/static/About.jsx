@@ -1,11 +1,14 @@
 const React = require('react');
+const Default = require('../components/Default');
 
 class About extends React.Component {
     render() {
         return (
-            <div>
-                <h1>This is the About Page</h1>
-            </div>
+            <Default>
+                <div>
+                    <h1>This is the About Page</h1>
+                </div>
+            </Default>
         );
     }
 }

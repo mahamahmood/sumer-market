@@ -1,11 +1,14 @@
 const React = require('react');
+const Default = require('../components/Default');
 
 class ContactUs extends React.Component {
     render() {
         return (
-            <div>
-                <h1>This is the Contact Us Page</h1>
-            </div>
+            <Default>
+                <div>
+                    <h1>This is the Contact Us Page</h1>
+                </div>
+            </Default>
         );
     }
 }
