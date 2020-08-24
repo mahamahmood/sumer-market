@@ -30,3 +30,13 @@ ul {
     margin: 0px 12px;
     font-size: 1.1em;
 }
+.recipe-banner{
+    width: 100%;
+}
+.recipe-mine-h1{
+    font-size: 4em;
+    padding: 10px;
+}
+.recipe-p-create{
+    padding: 20px 25px 25px 25px;
+}

@@ -7,12 +7,16 @@ class Index extends React.Component {
         return (
             <Default>
                 <div class="container">
-                    <h1>Sumer Recipes <small><i>Shared by Our Community</i></small></h1>
-                    <div class="row">
-                        <p class="col-sm-8">Our customers not only shop at Sumer Market but also they come here to share their best tips and tricks of making the best middel eastern dishes. Here you will be able to view all of the recipes that have been shared and <a href="/recipes/new">create your own recipe page.</a></p>
-                        <a class="col-sm-4 btn btn-outline-success" role="button" href="/recipes/new">Create a New Recipe Page</a>
-                    </div>
-                    <br></br>
+                    <header>
+                        <img class="recipe-banner img-fluid" src="https://i.imgur.com/9siX5Xj.png" />
+                        <div>
+                            <h1 class='recipe-mine-h1'>Sumer Recipes <small><i>Shared by Our Community</i></small></h1>
+                            <div class="recipe-p-create">
+                                <p>Our customers not only shop at Sumer Market but also they come here to share their best tips and tricks of making the best middel eastern dishes. Here you will be able to view all of the recipes that have been shared and <a href="/recipes/new">create your own recipe page.</a></p>
+                                <a class="btn btn-outline-success" role="button" href="/recipes/new">Create a New Recipe Page</a>
+                            </div>
+                        </div>
+                    </header>
                     <ul class="row row-cols-1 row-cols-md-2">
                         {
                             recipes.map((recipe, i) => {
