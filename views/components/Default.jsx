@@ -14,7 +14,7 @@ class Default extends React.Component {
                     {/* End of Style Sheets */}
                     <title>Sumer Market</title>
                 </head>
-                <body>
+                <body class="container">
                     <nav>
                         <ul class="nav nav-tabs justify-content-center">
                             <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
@@ -25,6 +25,23 @@ class Default extends React.Component {
                         </ul>
                     </nav>
                     {this.props.children}
+                    <footer>
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="#" alt="logo-twitter" /></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="#" alt="logo-youtube" /></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="#" alt="logo-facebook" /></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="#" alt="logo-reddit" /></a>
+                            </li>
+                        </ul>
+                        <p class="copy-rights">All rights reserved. Copyright &copy;2020.</p>
+                    </footer>
                 </body>
             </html>
         );
