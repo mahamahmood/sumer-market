@@ -11,6 +11,9 @@ body{
 nav{
     padding: 10px 0px;
 }
+img{
+    width: 400px;
+}
 .card-img-top{
     padding: 25px 10px 10px 10px;
     width: 600px;

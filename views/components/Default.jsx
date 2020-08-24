@@ -19,9 +19,11 @@ class Default extends React.Component {
                         <ul class="nav nav-tabs justify-content-center">
                             <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
                             <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact-us">CONTACT US</a></li>
                             <li class="nav-item"><a class="nav-link" href="/products">SHOP PRODUCTS</a></li>
                             <li class="nav-item"><a class="nav-link" href="/recipes">COMMUNITY SHARED RECIPES</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact-us">CONTACT US</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">SHOPPING CART</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">LOG IN</a></li>
                         </ul>
                     </nav>
                     {this.props.children}
