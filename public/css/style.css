@@ -1,4 +1,4 @@
-/* * {
+ /* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,16 +36,25 @@ ul {
     width: 100%;
 }
 .recipe-mine-h1{
-    font-size: 4em;
-    padding: 10px;
+    text-align: center;
+    font-size: 4.2em;
+    padding: 15px 10px 10px 10px;
 }
 .recipe-p-create{
-    padding: 20px 25px 25px 25px;
+    padding: 15px 160px 30px 160px;
     font-size: 1.1em;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.recipe-show-h1{
+    font-size: 4.2em;
+    padding: 15px 10px 10px 10px;
 }
 .recipe-show-img{
     width: 1200px;
     height: 570px;
+    padding-bottom: 10px;
 }
 .recipe-show-p{
     padding: 20px 25px 25px 25px;

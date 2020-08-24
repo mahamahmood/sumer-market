@@ -14,7 +14,7 @@ class Default extends React.Component {
                     {/* End of Style Sheets */}
                     <title>Sumer Market</title>
                 </head>
-                <body class="container">
+                <body class="container-fluid">
                     <nav>
                         <ul class="nav nav-tabs justify-content-center">
                             <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
