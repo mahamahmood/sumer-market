@@ -10,12 +10,12 @@ class Edit extends React.Component {
                     <h1>Recipe Edit Page</h1>
                     <form action={`/recipes/${_id}?_method=PUT`} method='POST'>
                         Title: <input type='text' name='title' defaultValue={title} /><br />
-                    Image URL: <input type='text' name='img' defaultValue={img} /><br />
-                    Ingredients: <input type='text' name='ingredients' defaultValue={ingredients} /><br />
-                    Tools Needed: <input type='text' name='tools' defaultValue={tools} /><br />
-                    Method: <input type='text' name='method' defaultValue={method} /><br />
-                    Shared By: <input type='text' name='author' defaultValue={author} /><br />
-                    Date Shared: <input type='date' name='date' defaultValue={date} /><br />
+                        Image URL: <input type='text' name='img' defaultValue={img} /><br />
+                        Ingredients: <input type='text' name='ingredients' defaultValue={ingredients} /><br />
+                        Tools Needed: <input type='text' name='tools' defaultValue={tools} /><br />
+                        Method: <input type='text' name='method' defaultValue={method} /><br />
+                        Shared By: <input type='text' name='author' defaultValue={author} /><br />
+                        Date Shared: <input type='date' name='date' defaultValue={date} /><br />
                         <input type='submit' name='' value='Submit Changes' />
                     </form>
                 </div>

@@ -1,7 +1,32 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid gold;
+  } */
+  
 body{
     background-color: rgb(253, 251, 244);
 }
-img{
+/* img{
     width: 600px;
     height: 500px;
+} */
+img{
+    padding: 25px 10px 10px 10px;
+    width: 600px;
+}
+ul {
+    list-style-type: none;
+}
+.recipe-card{
+    background-color: rgb(253, 251, 244);
+}
+.card-title{
+    font-size: 1.5em;
+}
+.btn-recipe{
+    padding: 5px 25px;
+    margin: 0px 12px;
+    font-size: 1.1em;
 }
