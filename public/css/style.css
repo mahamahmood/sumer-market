@@ -11,9 +11,9 @@ body{
 nav{
     padding: 10px 0px;
 }
-img{
+/* img{
     width: 400px;
-}
+} */
 .card-img-top{
     padding: 25px 10px 10px 10px;
     width: 600px;
@@ -52,7 +52,7 @@ ul {
     margin-right: 20px;
     text-align: center;
 }
-.recipe-show-h1{
+.sumer-show-h1{
     font-size: 4.2em;
     padding: 15px 10px 10px 10px;
 }
@@ -65,7 +65,24 @@ ul {
     padding: 20px 25px 25px 25px;
     font-size: 1.1em;
 }
-
+.product-show-card{
+    margin: 25px;
+    background-color: rgb(253, 250, 237);
+}
+.product-show-img{
+    height: 100%;
+}
+.product-show-h2{
+    padding: 10px 25px 0px 25px;
+    font-size: 3em;
+}
+.product-show-p{
+    padding: 10px 25px 25px 25px;
+    font-size: 1.1em;
+}
+.buy-btn{
+    margin: 0px 25px;
+}
 .copy-rights{
     text-align: center;
 }

@@ -7,17 +7,28 @@ class Show extends React.Component {
         const { _id, name, img, description, qty, price } = this.props.product;
         return (
             <Default>
-                <div>
-                    <h1>Product Show Page</h1>
+                <div class="container">
                     <a href='/products'>Back to Products</a>
-                    <p>Name: {name}</p>
-                    <img src={img} />
-                    <p>Description: {description}</p>
-                    <p>Quantity: {qty > 0 ? `${qty} Available in stock.` : `Out of stock`}</p>
-                    <p>Price: ${price}</p>
-                    <form action={`/products/${_id}?_method=PATCH`} method="POST">
-                        <button type="submit" value="BUY" disabled={qty > 0 ? false : true}>{qty > 0 ? 'Buy' : 'Out of Stock'}</button>
-                    </form>
+                    <div class="product-show-card card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <img class="product-show-img card-img img-fluid" src={img} />
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h2 class="product-show-h2 card-title">{name}</h2>
+                                    <div class="product-show-p">
+                                        <p class="card-text">Description: {description}</p>
+                                        <p class="card-text"><strong>Quantity: {qty > 0 ? `${qty} Available in stock.` : `Out of stock`}</strong></p>
+                                        <p class="card-text"><strong>Price: ${price}</strong></p>
+                                    </div>
+                                    <form action={`/products/${_id}?_method=PATCH`} method="POST">
+                                        <button class="buy-btn btn btn-warning btn-product" type="submit" value="BUY" disabled={qty > 0 ? false : true}>{qty > 0 ? 'Buy Now' : 'Out of Stock'}</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Default>
         );

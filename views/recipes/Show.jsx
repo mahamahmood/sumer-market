@@ -8,7 +8,7 @@ class Show extends React.Component {
             <Default>
                 <div class="container">
                     <a href='/recipes'>Back to Recipes</a>
-                    <h1 class="recipe-show-h1">{title}</h1>
+                    <h1 class="sumer-show-h1">{title}</h1>
                     <img class="recipe-show-img img-fluid" src={img} />
                     <p><strong><i>Shared By: {author} on {date}</i></strong></p>
                     <div class="recipe-show-p">
