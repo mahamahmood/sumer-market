@@ -21,8 +21,8 @@ img{
 ul {
     list-style-type: none;
 }
-.recipe-card{
-    background-color: rgb(253, 251, 244);
+.sumer-card{
+    background-color: rgb(253, 250, 237);
 }
 .card-title{
     font-size: 1.5em;
@@ -32,15 +32,20 @@ ul {
     margin: 0px 12px;
     font-size: 1.1em;
 }
-.recipe-banner{
+.btn-product{
+    padding: 5px 25px;
+    margin: 0px 12px;
+    font-size: 1.1em;
+}
+.sumer-banner{
     width: 100%;
 }
-.recipe-mine-h1{
+.sumer-mine-h1{
     text-align: center;
     font-size: 4.2em;
     padding: 15px 10px 10px 10px;
 }
-.recipe-p-create{
+.sumer-p-btn-create{
     padding: 15px 160px 30px 160px;
     font-size: 1.1em;
     margin-left: 20px;
@@ -60,6 +65,7 @@ ul {
     padding: 20px 25px 25px 25px;
     font-size: 1.1em;
 }
+
 .copy-rights{
     text-align: center;
 }
