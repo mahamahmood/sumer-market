@@ -8,7 +8,7 @@ class Index extends React.Component {
             <Default>
                 <div>
                     <header>
-                        <img class="sumer-banner img-fluid" src="https://i.imgur.com/9siX5Xj.png" />
+                        <img class="sumer-banner img-fluid" src="https://i.imgur.com/S5awAsP.jpg" />
                             <h1 class='sumer-mine-h1'>Sumer Recipes <small><i>Shared by Our Community</i></small></h1>
                             <div class="sumer-p-btn-create">
                                 <p>Our customers not only shop at Sumer Market but also they come here to share their best tips and tricks of making the best middel eastern dishes. Here you will be able to view all of the recipes that have been shared and <a href="/recipes/new">create your own recipe page.</a></p>
