@@ -11,9 +11,11 @@ class Show extends React.Component {
                     <h1 class="recipe-mine-h1">{title}</h1>
                     <img class="recipe-show-img img-fluid" src={img} />
                     <p><strong><i>Shared By: {author} on {date}</i></strong></p>
-                    <p>Ingredients: {ingredients}</p>
-                    <p>Tools Needed: {tools}</p>
-                    <p>Method: {method}</p>
+                    <div class="recipe-show-p">
+                        <p><strong>Ingredients:</strong> {ingredients}</p>
+                        <p><strong>Tools Needed:</strong> {tools}</p>
+                        <p><strong>Method:</strong> {method}</p>
+                    </div>
                 </div>
             </Default>
         );

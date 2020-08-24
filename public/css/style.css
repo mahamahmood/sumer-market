@@ -7,6 +7,7 @@
   
 body{
     background-color: rgb(253, 251, 244);
+    font-size: 1.1em;
 }
 .card-img-top{
     padding: 25px 10px 10px 10px;
@@ -37,6 +38,9 @@ ul {
     padding: 20px 25px 25px 25px;
 }
 .recipe-show-img{
-    width: 1000px;
-    height: 600px;
+    width: 1200px;
+    height: 570px;
+}
+.recipe-show-p{
+    padding: 20px 25px 25px 25px;
 }
