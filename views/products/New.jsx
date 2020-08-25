@@ -12,15 +12,15 @@ class New extends React.Component {
                         <form action='/products' method='POST'>
                             <fieldset>
                                 <label for="name">Name</label> 
-                                <input class="form-input" type='text' name='name' /><br />
+                                <input class="form-input" type='text' name='name' />
                                 <label for="img">Image URL</label>
-                                <input class="form-input"  type='text' name='img' /><br />
+                                <input class="form-input"  type='text' name='img' />
                                 <label for="description">Description</label> 
-                                <input class="form-input"  type='text' name='description' /><br />
+                                <input class="form-input"  type='text' name='description' />
                                 <label for="qty">Quantity</label>
-                                <input class="form-input"  type='number' name='qty' /><br />
+                                <input class="form-input"  type='number' name='qty' />
                                 <label for="price">Price</label>
-                                <input class="form-input"  type='number' name='price' /><br />
+                                <input class="form-input"  type='number' name='price' />
                             </fieldset>
                             <input class="form-btn btn-lg btn-block btn btn-dark" type='submit' name='' value='Create New Product' />
                         </form>
