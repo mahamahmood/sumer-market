@@ -7,6 +7,7 @@
   
 body{
     background-color: rgb(253, 251, 244);
+    font-family: helvetica;
 }
 nav{
     padding: 10px 0px;
@@ -85,4 +86,58 @@ ul {
 }
 .copy-rights{
     text-align: center;
+}
+/* ===== Form Styling ===== */
+.form-container {
+    width: 45vw;
+    height: 59vw;
+    margin: 35px auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ddd,
+                -1px -1px 10px #ddd,
+                 1px -1px 10px #ddd,
+                -1px 1px 10px #ddd;
+    font-size: 1.1em;
+}
+.form{
+    width: 100%;
+    background: rgb(253, 250, 237);
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.h1-form{
+    font-size: 3em;
+    border-bottom: 1.5px solid;
+    padding-bottom: 10px;
+}
+fieldset{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+legend{
+    padding: 0px 10px;
+}
+label{
+    display: block;
+}
+.form-input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 5px;
+    background: rgb(253, 251, 244);
+}
+.form-input:focus{
+    outline: 0;
+    border: 1px solid;
+}
+.form-btn{
+    margin-top: 35px;
 }
