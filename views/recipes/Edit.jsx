@@ -6,18 +6,30 @@ class Edit extends React.Component {
         const { _id, title, img, ingredients, tools, method, author, date } = this.props.recipe;
         return (
             <Default>
-                <div>
-                    <h1>Recipe Edit Page</h1>
-                    <form action={`/recipes/${_id}?_method=PUT`} method='POST'>
-                        Title: <input type='text' name='title' defaultValue={title} /><br />
-                        Image URL: <input type='text' name='img' defaultValue={img} /><br />
-                        Ingredients: <input type='text' name='ingredients' defaultValue={ingredients} /><br />
-                        Tools Needed: <input type='text' name='tools' defaultValue={tools} /><br />
-                        Method: <input type='text' name='method' defaultValue={method} /><br />
-                        Shared By: <input type='text' name='author' defaultValue={author} /><br />
-                        Date Shared: <input type='date' name='date' defaultValue={date} /><br />
-                        <input type='submit' name='' value='Submit Changes' />
-                    </form>
+                <div class="form-container">
+                    <div class="form">
+                        <h1 class="h1-form">Recipe Edit Page</h1>
+                        <h3>Recipe Information</h3>
+                        <form action={`/recipes/${_id}?_method=PUT`} method='POST'>
+                            <fieldset>
+                                <label for="title">Title</label>
+                                <input class="form-input" type='text' name='title' defaultValue={title} />
+                                <label for="img">Image URL</label>
+                                <input class="form-input" type='text' name='img' defaultValue={img} />
+                                <label for="ingredients">Ingredients</label>
+                                <input class="form-input" type='text' name='ingredients' defaultValue={ingredients} />
+                                <label for="tools">Tools Needed</label>
+                                <input class="form-input" type='text' name='tools' defaultValue={tools} />
+                                <label for="method">Method</label>
+                                <input class="form-input" type='text' name='method' defaultValue={method} />
+                                <label for="author">Shared By</label>
+                                <input class="form-input" type='text' name='author' defaultValue={author} />
+                                <label for="date">Date Shared</label>
+                                <input class="form-input" type='text' name='date' defaultValue={date} />
+                            </fieldset>
+                            <input class="form-btn btn-lg btn-block btn btn-dark" type='submit' name='' value='Submit Changes' />
+                        </form>
+                    </div>
                 </div>
             </Default>
         );
