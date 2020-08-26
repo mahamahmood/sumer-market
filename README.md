@@ -27,9 +27,9 @@ Using MVC (Models, Views, and Controllers) and MongoDB to store data, I create 7
 - Give users the ability to view the app in Arabic
 
 ## Wireframes
-[home](img/home.png)
-[product index](img/product-index.png)
-[product show](img/product-show.png)
-[edit](img/edit.png)
-[recipe index](img/recipe-index.png)
-[recipe show](img/recipe-show.png)
+- [Home](img/home.png)
+- [Product index](img/product-index.png)
+- [Product show](img/product-show.png)
+- [Edit](img/edit.png)
+- [Recipe index](img/recipe-index.png)
+- [Recipe show](img/recipe-show.png)
