@@ -18,7 +18,7 @@ class Show extends React.Component {
                                 <div class="card-body">
                                     <h2 class="product-show-h2 card-title">{name}</h2>
                                     <div class="product-show-p">
-                                        <p class="card-text">Description: {description}</p>
+                                        <p class="card-text">{description}</p>
                                         <p class="card-text"><strong>Quantity: {qty > 0 ? `${qty} Available in stock.` : `Out of stock`}</strong></p>
                                         <p class="card-text"><strong>Price: ${price}</strong></p>
                                     </div>
