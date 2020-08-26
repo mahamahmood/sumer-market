@@ -5,6 +5,8 @@ class New extends React.Component {
     render() {
         return (
             <Default>
+                <div class="container">
+                <a href='/products'>Back to Products</a>
                 <div class="form-container">
                     <div class="form">
                         <h1 class="h1-form">New Product Page</h1>
@@ -25,6 +27,7 @@ class New extends React.Component {
                             <input class="form-btn btn-lg btn-block btn btn-dark" type='submit' name='' value='Create New Product' />
                         </form>
                     </div>
+                </div>
                 </div>
             </Default>
         );
