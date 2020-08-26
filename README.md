@@ -9,8 +9,8 @@ The purpose of the app is to solve the problem of anyone who cooks middle easter
 ## [Sumer Market App Live Site](https://sumer-market.herokuapp.com/)
 
 ## Technologies Used
-- Node.js, Mongoose, Express, JSX, HTML5, CSS, and Bootstrap.
-- Visual Studio Code 
+- Node.js, Mongoose, Express, JSX, HTML5, CSS, and Bootstrap
+- Visual Studio Code, MongoDB, and Heroku 
 
 ## Approach Taken
 Using MVC (Models, Views, and Controllers) and MongoDB to store data, I create 7 RESTful routes for the products page for admin usage. Using the same technologies, I created a recipes page that has all 7 RESTful routes for user usage.
@@ -28,10 +28,10 @@ Using MVC (Models, Views, and Controllers) and MongoDB to store data, I create 7
 
 ## Wirefames
 <details><summar><strong>Sumer Market Wirefames</strong></summary>
-(img/home.png)
-(img/product-index.png)
-(img/product-show.png)
-(img/edit.png)
-(img/recipe-index.png)
-(img/recipe-show.png)
+![home](img/home.png)
+![product index](img/product-index.png)
+![product show](img/product-show.png)
+![edit](img/edit.png)
+![recipe index](img/recipe-index.png)
+![recipe show](img/recipe-show.png)
 </details>
