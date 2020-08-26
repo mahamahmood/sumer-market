@@ -9,7 +9,7 @@ class Index extends React.Component {
             <Default>
                 <div>
                     <header>
-                        <img class="sumer-banner img-fluid" src="https://i.imgur.com/r4U1dnQ.jpg" />
+                        <img class="sumer-banner img-fluid" src="https://i.imgur.com/1walnEA.jpg" />
                         <h1 class='sumer-mine-h1'>Sumer Products</h1>
                         <div class="sumer-p-btn-create">
                             <p>Sweet beans affogato, sweet, instant aroma sit in flavour. Chicory, coffee pumpkin spice latte espresso, frappuccino single origin crema trifecta percolator coffee strong. Americano ut cappuccino as, qui, crema cultivar cappuccino affogato black robust.</p>

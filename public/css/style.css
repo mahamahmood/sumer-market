@@ -141,3 +141,22 @@ label{
 .form-btn{
     margin-top: 35px;
 }
+/* ===== End Form Styling ===== */
+
+/* ===== Home Page Styling ===== */
+.home-show-card {
+    margin: 30px;
+    background-color: rgb(253, 250, 237);
+}
+.home-show-img{
+    height: 100%;
+}
+.home-show-p{
+    padding: 100px 30px 100px 30px;
+    font-size: 1.1em;
+}
+.btn-home{
+    padding: 15px 25px;
+    margin-top: 20px;
+}
+/* ===== End Home Page Styling ===== */
