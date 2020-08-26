@@ -17,7 +17,7 @@ class Home extends React.Component {
                         <div class="home-show-card card mb-3">
                             <div class="row no-gutters">
                                 <div class="col-md-6">
-                                    <img class="home-show-img card-img img-fluid" src="https://i.imgur.com/yR5iqPZ.jpg" />
+                                <a href="/products"><img class="home-show-img card-img img-fluid" src="https://i.imgur.com/yR5iqPZ.jpg" /></a>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="card-body">
@@ -40,7 +40,7 @@ class Home extends React.Component {
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <img class="home-show-img card-img img-fluid" src="https://i.imgur.com/awBzc2Q.jpg" />
+                                    <a href="/recipes"><img class="home-show-img card-img img-fluid" src="https://i.imgur.com/awBzc2Q.jpg" /></a>
                                 </div>
                             </div>
                         </div>
