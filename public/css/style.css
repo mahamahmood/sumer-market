@@ -81,6 +81,12 @@ ul {
 .buy-btn{
     margin: 0px 25px;
 }
+.btn-delete{
+   padding-left: 40px;
+   padding-right: 40px;
+   margin-left: 5px;
+   margin-right: 0px;
+}
 .copy-rights{
     text-align: center;
 }
