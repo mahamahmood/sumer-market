@@ -18,8 +18,8 @@ class Default extends React.Component {
                     <nav>
                         <ul class="nav nav-tabs justify-content-center">
                             <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact-us">CONTACT US</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/#">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/#">CONTACT US</a></li>
                             <li class="nav-item"><a class="nav-link" href="/products">SHOP PRODUCTS</a></li>
                             <li class="nav-item"><a class="nav-link" href="/recipes">COMMUNITY SHARED RECIPES</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">SHOPPING CART</a></li>
@@ -27,23 +27,25 @@ class Default extends React.Component {
                         </ul>
                     </nav>
                     {this.props.children}
+                    <div id="sumer-footer">
                     <footer>
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><img src="#" alt="logo-twitter" /></a>
+                                <a class="nav-link" href="#">INSTAGRAM</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><img src="#" alt="logo-youtube" /></a>
+                                <a class="nav-link" href="#">YOUTUBE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><img src="#" alt="logo-facebook" /></a>
+                                <a class="nav-link" href="#">SNAPCHAT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><img src="#" alt="logo-reddit" /></a>
+                                <a class="nav-link" href="#">TWITTER</a>
                             </li>
                         </ul>
                         <p class="copy-rights">All rights reserved. Copyright &copy;2020.</p>
                     </footer>
+                    </div>
                 </body>
             </html>
         );
